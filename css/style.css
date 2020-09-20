@@ -1,0 +1,278 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+h1,h2,h3,h4,h5,h6,p,span {
+    font-family: "HK Nova";
+}
+html, body {
+    min-height: 100% !important;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {    
+    width: 100%;
+    height: 100%;    
+}
+
+.container .header .banner {
+    background: url('/img/banner.png') no-repeat 50% 50%;
+    max-width: 100%;
+    height: 20vw;
+    max-height: 20vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.banner-container {
+    padding-top: 5vw;
+    display: flex;
+    flex-direction: row;
+}
+
+.banner-info {
+    display: flex;
+    flex-direction: column;        
+    margin-top: auto;
+    /* margin-bottom: auto; */
+    /* position: relative; */
+    /* bottom: 0; */
+    padding: 16px;
+}
+
+.banner-info h1,
+.banner-info h3 {
+    color: white;
+}
+
+.banner-info h1 {
+    font-weight: bolder;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 2rem;
+}
+
+.banner-info h3 {
+    font-weight: lighter;
+    font-size: 1.5rem;
+
+}
+
+.banner-container #profile {    
+    height: 20vw;
+    max-height: 20vw;
+    min-height: 5vw;
+    margin-left: 5vw;
+}
+
+
+.banner-icons {
+    float: right;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    margin-top: -5.5vh;
+}
+
+.banner-icons img {
+    height: 36px;
+    width: 36px;
+    margin: auto 5px;
+}
+
+.body {    
+    padding: 5.6vw;
+}
+
+.body .sector {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+}
+
+.body .sector h1 {
+    font-weight: bolder;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.body .sector p {
+    font-weight: lighter;
+    font-size: 1.3rem;
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.timeline-container .col { 
+    flex: 1;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.timeline-container .col #header {
+    color: gray;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.no-padding {
+    padding: 0 !important;
+}
+
+.timeline-container .col .list-block::before, .timeline-container .col .list-block-start::before {
+    width: 12px;
+    height: 12px;
+    border: 2px solid #004385;
+    position: absolute;
+    content: "";
+    border-radius: 50%;
+    background-color: #fff;
+    margin-left: -35px;/* left: 5.6vh; */
+}
+
+.timeline-container .col .list-block-start::before {
+    width: 10px;
+    height: 10px;
+    border: 5px solid #004385;
+}
+
+.timeline-container .col .list-block, .timeline-container .col .list-block-start {
+    border-left: 2px solid #004385;
+    padding-left: 25px;
+}
+
+.timeline-container .col .list-block #title {
+    color: #004385;
+}
+
+.timeline-container .col .list-block .description {
+    padding-top: 10px;
+    padding-bottom: 50px;
+}
+
+.project-tabs {
+    overflow: hidden;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.project-tabs button {
+    font-family: "HK Nova";
+    font-weight: bolder;
+    font-size: 1rem;
+
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.project-tabs button:hover {
+    background-color: #ddd;
+}
+
+.project-tabs button.active {
+    background-color: #ccc;
+}
+
+.tab-content {
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+    animation: fadeEffect 1s;
+}
+
+.list-item {
+    display: flex;
+    flex-direction: row;
+}
+
+.list-item img {
+    height: 20vw;
+    max-height: 20vw;
+    min-height: 5vw;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.list-item .list-item-container {
+    padding: 25px;
+}
+
+.list-item .list-item-container #title {
+    color: #004385;
+    font-weight: bolder;
+}
+
+.list-item .list-item-container #duration,
+.timeline-container .col .list-block #duration {
+    color: gray;
+    font-size: 1rem;
+    padding-bottom: 25px;
+}
+
+.list-item .list-item-container #description {
+    font-weight: lighter;
+}
+
+.list-item .list-item-container .stack-container .stack-info {
+    display: flex;
+    flex-direction: row;
+    /* width: 100px; */
+    flex-wrap: wrap;
+}
+
+.list-item .list-item-container .stack-container #label {
+    color: gray;
+    padding-top: 25px;
+    padding-bottom: 5px;
+}
+
+.list-item .list-item-container .stack-container .stack-info p {
+    color: #004385;
+    font-size: 1rem;
+    border: 2px solid #004385;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 10px;
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+footer {
+    width: 100%;
+    height: 5rem;    
+    background-color: #111111;
+}
+
+@font-face {
+    font-family: "HK Nova";
+    font-weight: lighter;
+    src: url('/fonts/HKNova-Regular.OTF');
+}
+
+@font-face {
+    font-family: "HK Nova";
+    font-weight: normal;
+    src: url('/fonts/HKNova-Medium.OTF');
+}
+
+@font-face {
+    font-family: "HK Nova";
+    font-weight: bold;
+    src: url('/fonts/HKNova-Bold.OTF');
+}
