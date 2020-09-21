@@ -120,12 +120,13 @@ html, body {
     content: "";
     border-radius: 50%;
     background-color: #fff;
-    margin-left: -35px;/* left: 5.6vh; */
+    margin-left: -34px;/* left: 5.6vh; */
 }
 
 .timeline-container .col .list-block-start::before {
     width: 10px;
     height: 10px;
+    margin-left: -36px;
     border: 5px solid #004385;
 }
 
