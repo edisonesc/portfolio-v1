@@ -141,7 +141,12 @@ html, body {
 
 .timeline-container .col .list-block .description {
     padding-top: 10px;
-    padding-bottom: 50px;
+    padding-bottom: 50px;    
+}
+
+.timeline-container .col .list-block .description p {
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 .project-tabs {
