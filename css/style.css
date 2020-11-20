@@ -25,6 +25,7 @@ html, body {
     max-height: 20vw;
     display: flex;
     flex-direction: row;
+    filter: drop-shadow(2px 4px 6px black);
 }
 
 .banner-container {
@@ -106,6 +107,10 @@ html, body {
     color: gray;
     padding-top: 10px;
     padding-bottom: 10px;
+}
+
+.timeline-container .col #countdown {
+    
 }
 
 .no-padding {
