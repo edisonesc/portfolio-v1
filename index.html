@@ -1,312 +1,413 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="css/style.css">
-        <script src="/js/index.js"></script>
-    </head>
-    <body>
-        <div class="container">
-            <div class="header">                             
-                <div class="banner">
-                    <div class="banner-container">
-                        <img id="profile" src="img/profile.png" />
-                        <div class="banner-info">
-                            <p id="name">Justin Edison B. Escabarte</p>
-                            <p id="profession">Mobile Developer</p>                                                                         
-                        </div>                         
-                    </div>                                                                                      
-                </div>         
-                <!-- <p>edi.escx@gmail.com</p> -->
-                <!-- <div class="banner-icons">
+  <head>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/js/index.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="banner">
+          <div class="banner-container">
+            <img id="profile" src="img/profile.png" />
+            <div class="banner-info">
+              <p id="name">Justin Edison B. Escabarte</p>
+              <p id="profession">Mobile Developer</p>
+            </div>
+          </div>
+        </div>
+        <!-- <p>edi.escx@gmail.com</p> -->
+        <!-- <div class="banner-icons">
                     <a href="https://www.linkedin.com/in/edisonesc/" target="_blank" ><img src="/img/linkedin.png"/></a>
                     <a href="https://github.com/edisonesc" target="_blank" ><img src="/img/github.png"/></a>
                     <a href="https://gitlab.com/escx" target="_blank" ><img src="/img/gitlab.png"/></a>
                 </div>                  -->
-            </div>         
-            <div class="body">
-                <div class="sector">
-                    <h1>Hi!</h1>
-                    <p>I am a junior mobile developer enthusiast on building useful applications and UI design, eager to learn and increase my knowledge. </p>
+      </div>
+      <div class="body">
+        <div class="sector">
+          <h1>Hi!</h1>
+          <p>
+            I am a junior mobile application developer enthusiast on building
+            useful applications and UI design, eager to learn and increase my
+            knowledge.
+          </p>
+        </div>
+        <div class="timeline-container">
+          <div class="col no-padding">
+            <h3 id="header">My Projects</h3>
+            <div class="project-tabs">
+              <button
+                class="tab-links active"
+                onclick="openTab(event, 'System')"
+              >
+                System Software
+              </button>
+              <button class="tab-links" onclick="openTab(event, 'Mobile')">
+                Mobile
+              </button>
+              <button class="tab-links" onclick="openTab(event, 'Others')">
+                Others
+              </button>
+            </div>
+            <div id="System" class="tab-content">
+              <div class="system-container">
+                <div class="list-item">
+                  <div class="list-item-container">
+                    <p id="title">Sammy api</p>
+                    <p id="duration">Jan 2021 - Feb 2021</p>
+                    <p id="description">
+                      Implemented all Sammy's offline features to an api. Also
+                      served as playground for backend development.
+                    </p>
+                    <div class="stack-container">
+                      <p id="label">Technologies used:</p>
+                      <div class="stack-info">
+                        <p>NestJS</p>
+                        <p>Redis</p>
+                        <p>JWT</p>
+                        <p>TypeOrm</p>
+                        <p>SQL</p>
+                        <p>Typescript</p>
+                        <p>momentjs</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <div class="timeline-container">
-                    <div class="col no-padding">
-                        <h3 id="header">My Projects</h3>
-                        <div class="project-tabs">
-                            <button class="tab-links active" onclick="openTab(event, 'System')">System Software</button>
-                            <button class="tab-links" onclick="openTab(event, 'Mobile')">Mobile</button>
-                            <button class="tab-links" onclick="openTab(event, 'Others')">Others</button>
-                        </div>
-                        <div id="System" class="tab-content">
-                            <div class="system-container">
-                                <div class="list-item">
-                                    <div class="list-item-container">
-                                        <p id="title">Semi-autonomous Book Shelving Robot with Collision Detection, QR Code Matching, Line Tracing, Book and Space detection</p>                                
-                                        <p id="duration">Feb 2018 – April 2019</p>
-                                        <p id="description">It uses computer vision to detect and return book from its respective shelf using QR Code and uses line tracing as the way of transporting the book to the shelf and collision detection to detect obstacles. </p>
-                                        <div class="stack-container">
-                                            <p id="label">Technologies used:</p>    
-                                            <div class="stack-info">
-                                                <p>Python</p>
-                                                <p>C</p>
-                                                <p>RPi3</p>
-                                                <p>Arduino</p>
-                                                <p>Tensorflow</p>
-                                            </div>
-                                        </diV>
-                                    </div>                                
-                                </div>
-                                <div class="list-item">
-                                    <div class="list-item-container">
-                                        <p id="title">CVARST Medical System</p>                                
-                                        <p id="duration">Aug 2018 – Sep 2018</p>
-                                        <p id="description">System project for a track using Java and MySQL. It has a two-way login, dynamic test for Colorblind and Auditory. CRUD is also implemented. </p>
-                                        <div class="stack-container">
-                                            <p id="label">Technologies used:</p>    
-                                            <div class="stack-info">
-                                                <p>Java</p>
-                                                <p>Derby</p>
-                                                <p>MySQL</p>                            
-                                            </div>
-                                        </diV>
-                                    </div>                                
-                                </div>
-                                <div class="list-item">
-                                    <div class="list-item-container">
-                                        <p id="title">Vehicle Renting and Billing System</p>                                
-                                        <p id="duration">July 2017 - Aug 2017</p>
-                                        <p id="description">Project developed for a course using Java and embedded Derby database. It enables users to reserve, schedule and choose a vehicle for rent. It also enables admin to perform CRUD operations from the clients and vehicles. </p>
-                                        <div class="stack-container">
-                                            <p id="label">Technologies used:</p>    
-                                            <div class="stack-info">
-                                                <p>Java</p>
-                                                <p>Derby</p>
-                                                <p>MySQL</p>                            
-                                            </div>
-                                        </diV>
-                                    </div>                                
-                                </div>
-                                <div class="list-item">
-                                    <div class="list-item-container">
-                                        <p id="title">Workout Generator & Nutrition Calculator</p>                                
-                                        <p id="duration">Jun 2017 - July 2017</p>
-                                        <p id="description">Mobile application project developed for a course using Java. It calculates your BMR, BMI, water intake, and total calorie intake base on how often you exercise. It also generates workouts for beginners, intermediates, and advanced, macro intake, and meal distribution. </p>
-                                        <div class="stack-container">
-                                            <p id="label">Technologies used:</p>    
-                                            <div class="stack-info">
-                                                <p>Java</p>
-                                                <p>Android</p>
-                                            </div>
-                                        </diV>
-                                    </div>                                
-                                </div>
-                                <div class="list-item">
-                                    <div class="list-item-container">
-                                        <p id="title">Workout Program Generator</p>                                
-                                        <p id="duration">Apr 2017</p>
-                                        <p id="description">Simple project developed for a course using Java. It generates workouts for users whether the user is a beginner, intermediate, and advanced. Users can choose whether they want to only use bodyweight, weights, or mixed. </p>
-                                        <div class="stack-container">
-                                            <p id="label">Technologies used:</p>    
-                                            <div class="stack-info">
-                                                <p>Java</p>                                                
-                                            </div>
-                                        </diV>
-                                    </div>                                
-                                </div>
-                            </div>                                          
-                        </div>
-                        <div id="Mobile" class="tab-content">
-                            <div class="mobile-container">
-                                <div class="list-item">
-                                    <div class="list-item-container">
-                                        <p id="title">Sammy</p>                                
-                                        <p id="duration">Oct 2020 – Dec 2020</p>
-                                        <p id="description">Mobile application developed using Ionic with Angular. It allows user to create, edit, delete workouts, exercises. The app can also handle Rep-based and Time-based exercise. They can also be able to share their workout to other users who's interested via QR Code.</p>
-                                        <div class="stack-container">
-                                            <p id="label">Technologies used:</p>    
-                                            <div class="stack-info">
-                                                <p>Typescript</p>
-                                                <p>Ionic</p>
-                                                <p>Angular</p>
-                                                <p>HTML</p>
-                                                <p>Scss</p>
-                                                <p>NgRx</p>
-                                                <p>Sqlite</p>                                
-                                            </div>
-                                        </diV>
-                                    </div>                                
-                                </div>                                
-                                <div class="list-item">
-                                    <div class="list-item-container">
-                                        <p id="title">Saves App</p>                                
-                                        <p id="duration">Feb 2020 – March 2020</p>
-                                        <p id="description">Mobile application developed using Ionic with Angular. Implemented state management using NgRx along with NestJS as backend framework and MongoDB for the database. It allows user to save items, add logs, images and track their progress on the item they're saving for. </p>
-                                        <div class="stack-container">
-                                            <p id="label">Technologies used:</p>    
-                                            <div class="stack-info">
-                                                <p>Typescript</p>
-                                                <p>Ionic</p>
-                                                <p>Angular</p>
-                                                <p>HTML</p>
-                                                <p>Scss</p>
-                                                <p>NgRx</p>
-                                                <p>MongoDB</p>                                
-                                                <p>NestJS</p>
-                                            </div>
-                                        </diV>
-                                    </div>                                
-                                </div>
-                                <div class="list-item">
-                                    <div class="list-item-container">
-                                        <p id="title">OJT Hours Tracker App</p>                                
-                                        <p id="duration">Sep 2018 – Oct 2018</p>
-                                        <p id="description">Mobile application that tracks hours based on time in and out. </p>
-                                        <div class="stack-container">
-                                            <p id="label">Technologies used:</p>    
-                                            <div class="stack-info">
-                                                <p>Android</p>
-                                                <p>Java</p>                                                
-                                                <p>xml</p>
-                                                <p>Firebase</p>
-                                            </div>
-                                        </diV>
-                                    </div>                                
-                                </div>
-
-                            </div>
-                        </div>
-                        <div id="Others" class="tab-content">
-                            <div class="mobile-container">
-                                <div class="list-item">
-                                    <div class="list-item-container">
-                                        <p id="title">Years Tracker</p>                                
-                                        <p id="duration">Feb 2021</p>
-                                        <p id="description">A personal tracker that tracks my existence and reflects time/years left before target year is met (default is 90 years).</p>
-                                        <div class="stack-container">
-                                            <p id="label">Technologies used:</p>    
-                                            <div class="stack-info">
-                                                <p>Angular</p>
-                                                <p>Typescript</p>
-                                                <p>momentjs</p>
-                                            </div>
-                                        </diV>
-                                    </div>                                
-                                </div>
-                                <div class="list-item">
-                                    <div class="list-item-container">
-                                        <p id="title">Image Resizer for App Icons and Splash Screen</p>                                
-                                        <p id="duration">Nov 2020</p>
-                                        <p id="description">Script that takes a file path and converts the image into various dimensions then uploads a download zip file and shares the download link.</p>
-                                        <div class="stack-container">
-                                            <p id="label">Technologies used:</p>    
-                                            <div class="stack-info">
-                                                <p>Python</p>
-                                                <p>PyUpload</p>                                         
-                                            </div>
-                                        </diV>
-                                    </div>                                
-                                </div>
-                                <div class="list-item">
-                                    <div class="list-item-container">
-                                        <p id="title">Mp4 to Mp3-Converter</p>                                
-                                        <p id="duration">Jul 2018 - Aug 2018</p>
-                                        <p id="description">Batch mp4 file to mp3 converter.</p>
-                                        <div class="stack-container">
-                                            <p id="label">Technologies used:</p>    
-                                            <div class="stack-info">
-                                                <p>Python</p>
-                                                <p>PyQt5 UI</p>
-                                                <p>FFmpeg</p>
-                                            </div>
-                                        </diV>
-                                    </div>                                
-                                </div>  
-                                <div class="list-item">
-                                    <div class="list-item-container">
-                                        <p id="title">Reflex</p>                                
-                                        <p id="duration">Oct 2017 - Nov 2017</p>
-                                        <p id="description">A simple yet challenging mobile game that gets harder as you level up.</p>
-                                        <div class="stack-container">
-                                            <p id="label">Technologies used:</p>    
-                                            <div class="stack-info">
-                                                <p>Android</p>
-                                                <p>Java</p>
-                                            </div>
-                                        </diV>
-                                    </div>                                
-                                </div>                                       
-                            </div>
-                        </div>
+                <div class="list-item">
+                  <div class="list-item-container">
+                    <p id="title">
+                      Semi-autonomous Book Shelving Robot with Collision
+                      Detection, QR Code Matching, Line Tracing, Book and Space
+                      detection
+                    </p>
+                    <p id="duration">Feb 2018 – April 2019</p>
+                    <p id="description">
+                      It uses computer vision to detect and return book from its
+                      respective shelf using QR Code and uses line tracing as
+                      the way of transporting the book to the shelf and
+                      collision detection to detect obstacles.
+                    </p>
+                    <div class="stack-container">
+                      <p id="label">Technologies used:</p>
+                      <div class="stack-info">
+                        <p>Python</p>
+                        <p>C</p>
+                        <p>RPi3</p>
+                        <p>Arduino</p>
+                        <p>Tensorflow</p>
+                      </div>
                     </div>
-                </div>                
-                <div class="timeline-container">
-                    <div class="col">
-                        <h3 id="header">Experience</h3>
-                        <div class="list-block">
-                            <p id="title">Junior Mobile Application Developer - 8Layer  Technologies</p>
-                            <p id="duration">July 2019 - Present</p>
-                            <div class="description">                                
-                                <p>Developed, tested and maintained mobile applications.</p>
-                                <p>Collaborated and developed Unity based mobile app that uses AR to display content e.g. Video, Text</p>
-                                <p>Designed UI for mobile</p>
-                                <p>Converted UI design to actual code</p>
-                            </div>                            
-                        </div>
-                        <div class="list-block">
-                            <p id="title">Intern - ihatecomputer.com inc</p>
-                            <p id="duration">July 2018 - Nov 2018</p>
-                            <div class="description">                                
-                                <p>Developed web application interfaces</p>
-                                <p>Developed interactive reports</p>
-                            </div>                            
-                        </div>
-                        <div class="list-block-start">                                                  
-                        </div>
-                    </div>
-                    <div class="col">
-                        <h3 id="header">Education</h3>
-                        <div class="list-block">
-                            <p id="title">AMA Computer University - Quezon City Philippines</p>
-                            <p id="duration">2015 – 2019</p>
-                            <div class="description">                                
-                                <p>Bachelor of Science in Computer Science</p>
-                                <p>Member, Microsoft Student Community</p>
-                            </div>                            
-                        </div>
-                        <div class="list-block">
-                            <p id="title">Mystical Rose - Caloocan City Philippines</p>
-                            <p id="duration">2012 – 2015</p>
-                            <div class="description">                                
-                                <p>Secondary</p>
-                            </div>                            
-                        </div>
-                        <div class="list-block-start">                                                  
-                        </div>
-                    </div>
+                  </div>
                 </div>
-                <div class="timeline-container">
-                    <div class="col no-padding">
-                        <h3 id="header">Other informations</h3>
-                        <p>+63 908 319 6800</p>
-                        <p>edi.escx@gmail.com</p>
-                        <p>Manila, PH</p>                                          
+                <div class="list-item">
+                  <div class="list-item-container">
+                    <p id="title">CVARST Medical System</p>
+                    <p id="duration">Aug 2018 – Sep 2018</p>
+                    <p id="description">
+                      System project for a track using Java and MySQL. It has a
+                      two-way login, dynamic test for Colorblind and Auditory.
+                      CRUD is also implemented.
+                    </p>
+                    <div class="stack-container">
+                      <p id="label">Technologies used:</p>
+                      <div class="stack-info">
+                        <p>Java</p>
+                        <p>Derby</p>
+                        <p>MySQL</p>
+                      </div>
                     </div>
-                </div> 
-                <!-- <div class="timeline-container">
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="list-item-container">
+                    <p id="title">Vehicle Renting and Billing System</p>
+                    <p id="duration">July 2017 - Aug 2017</p>
+                    <p id="description">
+                      Project developed for a course using Java and embedded
+                      Derby database. It enables users to reserve, schedule and
+                      choose a vehicle for rent. It also enables admin to
+                      perform CRUD operations from the clients and vehicles.
+                    </p>
+                    <div class="stack-container">
+                      <p id="label">Technologies used:</p>
+                      <div class="stack-info">
+                        <p>Java</p>
+                        <p>Derby</p>
+                        <p>MySQL</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="list-item-container">
+                    <p id="title">Workout Generator & Nutrition Calculator</p>
+                    <p id="duration">Jun 2017 - July 2017</p>
+                    <p id="description">
+                      Mobile application project developed for a course using
+                      Java. It calculates your BMR, BMI, water intake, and total
+                      calorie intake base on how often you exercise. It also
+                      generates workouts for beginners, intermediates, and
+                      advanced, macro intake, and meal distribution.
+                    </p>
+                    <div class="stack-container">
+                      <p id="label">Technologies used:</p>
+                      <div class="stack-info">
+                        <p>Java</p>
+                        <p>Android</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="list-item-container">
+                    <p id="title">Workout Program Generator</p>
+                    <p id="duration">Apr 2017</p>
+                    <p id="description">
+                      Simple project developed for a course using Java. It
+                      generates workouts for users whether the user is a
+                      beginner, intermediate, and advanced. Users can choose
+                      whether they want to only use bodyweight, weights, or
+                      mixed.
+                    </p>
+                    <div class="stack-container">
+                      <p id="label">Technologies used:</p>
+                      <div class="stack-info">
+                        <p>Java</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="Mobile" class="tab-content">
+              <div class="mobile-container">
+                <div class="list-item">
+                  <div class="list-item-container">
+                    <p id="title">Sammy</p>
+                    <p id="duration">Oct 2020 – Dec 2020</p>
+                    <p id="description">
+                      Mobile application developed using Ionic with Angular. It
+                      allows user to create, edit, delete workouts, exercises.
+                      The app can also handle Rep-based and Time-based exercise.
+                      They can also be able to share their workout to other
+                      users who's interested via QR Code.
+                    </p>
+                    <div class="stack-container">
+                      <p id="label">Technologies used:</p>
+                      <div class="stack-info">
+                        <p>Typescript</p>
+                        <p>Ionic</p>
+                        <p>Angular</p>
+                        <p>HTML</p>
+                        <p>Scss</p>
+                        <p>NgRx</p>
+                        <p>Sqlite</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="list-item-container">
+                    <p id="title">Saves App</p>
+                    <p id="duration">Feb 2020 – March 2020</p>
+                    <p id="description">
+                      Mobile application developed using Ionic with Angular.
+                      Implemented state management using NgRx along with NestJS
+                      as backend framework and MongoDB for the database. It
+                      allows user to save items, add logs, images and track
+                      their progress on the item they're saving for.
+                    </p>
+                    <div class="stack-container">
+                      <p id="label">Technologies used:</p>
+                      <div class="stack-info">
+                        <p>Typescript</p>
+                        <p>Ionic</p>
+                        <p>Angular</p>
+                        <p>HTML</p>
+                        <p>Scss</p>
+                        <p>NgRx</p>
+                        <p>MongoDB</p>
+                        <p>NestJS</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="list-item-container">
+                    <p id="title">OJT Hours Tracker App</p>
+                    <p id="duration">Sep 2018 – Oct 2018</p>
+                    <p id="description">
+                      Mobile application that tracks hours based on time in and
+                      out.
+                    </p>
+                    <div class="stack-container">
+                      <p id="label">Technologies used:</p>
+                      <div class="stack-info">
+                        <p>Android</p>
+                        <p>Java</p>
+                        <p>xml</p>
+                        <p>Firebase</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id="Others" class="tab-content">
+              <div class="mobile-container">
+                <div class="list-item">
+                  <div class="list-item-container">
+                    <p id="title">Years Tracker</p>
+                    <p id="duration">Feb 2021</p>
+                    <p id="description">
+                      A personal tracker that tracks my existence and reflects
+                      time/years left before target year is met (default is 90
+                      years).
+                    </p>
+                    <div class="stack-container">
+                      <p id="label">Technologies used:</p>
+                      <div class="stack-info">
+                        <p>Angular</p>
+                        <p>Typescript</p>
+                        <p>momentjs</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="list-item-container">
+                    <p id="title">
+                      Image Resizer for App Icons and Splash Screen
+                    </p>
+                    <p id="duration">Nov 2020</p>
+                    <p id="description">
+                      Script that takes a file path and converts the image into
+                      various dimensions then uploads a download zip file and
+                      shares the download link.
+                    </p>
+                    <div class="stack-container">
+                      <p id="label">Technologies used:</p>
+                      <div class="stack-info">
+                        <p>Python</p>
+                        <p>PyUpload</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="list-item-container">
+                    <p id="title">Mp4 to Mp3-Converter</p>
+                    <p id="duration">Jul 2018 - Aug 2018</p>
+                    <p id="description">Batch mp4 file to mp3 converter.</p>
+                    <div class="stack-container">
+                      <p id="label">Technologies used:</p>
+                      <div class="stack-info">
+                        <p>Python</p>
+                        <p>PyQt5 UI</p>
+                        <p>FFmpeg</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="list-item">
+                  <div class="list-item-container">
+                    <p id="title">Reflex</p>
+                    <p id="duration">Oct 2017 - Nov 2017</p>
+                    <p id="description">
+                      A simple yet challenging mobile game that gets harder as
+                      you level up.
+                    </p>
+                    <div class="stack-container">
+                      <p id="label">Technologies used:</p>
+                      <div class="stack-info">
+                        <p>Android</p>
+                        <p>Java</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="timeline-container">
+          <div class="col">
+            <h3 id="header">Experience</h3>
+            <div class="list-block">
+              <p id="title">
+                Junior Mobile Application Developer - 8Layer Technologies
+              </p>
+              <p id="duration">July 2019 - Present</p>
+              <div class="description">
+                <p>Developed, tested and maintained mobile applications.</p>
+                <p>
+                  Collaborated and developed Unity based mobile app that uses AR
+                  to display content e.g. Video, Text
+                </p>
+                <p>Designed UI for mobile</p>
+                <p>Converted UI design to actual code</p>
+              </div>
+            </div>
+            <div class="list-block">
+              <p id="title">Intern - ihatecomputer.com inc</p>
+              <p id="duration">July 2018 - Nov 2018</p>
+              <div class="description">
+                <p>Developed web application interfaces</p>
+                <p>Developed interactive reports</p>
+              </div>
+            </div>
+            <div class="list-block-start"></div>
+          </div>
+          <div class="col">
+            <h3 id="header">Education</h3>
+            <div class="list-block">
+              <p id="title">
+                AMA Computer University - Quezon City Philippines
+              </p>
+              <p id="duration">2015 – 2019</p>
+              <div class="description">
+                <p>Bachelor of Science in Computer Science</p>
+                <p>Member, Microsoft Student Community</p>
+              </div>
+            </div>
+            <div class="list-block">
+              <p id="title">Mystical Rose - Caloocan City Philippines</p>
+              <p id="duration">2012 – 2015</p>
+              <div class="description">
+                <p>Secondary</p>
+              </div>
+            </div>
+            <div class="list-block-start"></div>
+          </div>
+        </div>
+        <div class="timeline-container">
+          <div class="col no-padding">
+            <h3 id="header">Other informations</h3>
+            <p>+63 908 319 6800</p>
+            <p>edi.escx@gmail.com</p>
+            <p>Manila, PH</p>
+          </div>
+        </div>
+        <!-- <div class="timeline-container">
                     <div class="col no-padding">
                         <h3 id="header">Misc</h3>
                         <p id="countdown"></p>
                     </div>
                 </div>  -->
-                
-            </div>           
-            <footer class="footer">
-                <div class="contact-icons">
-                    <a href="https://www.linkedin.com/in/edisonesc/" target="_blank" ><img src="/img/linkedin.png"/></a>
-                    <a href="https://github.com/edisonesc" target="_blank" ><img src="/img/github.png"/></a>
-                    <a href="https://gitlab.com/escx" target="_blank" ><img src="/img/gitlab.png"/></a>
-                </div>
-            </footer>
+      </div>
+      <footer class="footer">
+        <div class="contact-icons">
+          <a href="https://www.linkedin.com/in/edisonesc/" target="_blank"
+            ><img src="/img/linkedin.png"
+          /></a>
+          <a href="https://github.com/edisonesc" target="_blank"
+            ><img src="/img/github.png"
+          /></a>
+          <a href="https://gitlab.com/escx" target="_blank"
+            ><img src="/img/gitlab.png"
+          /></a>
         </div>
-    
-    </body>
+      </footer>
+    </div>
+  </body>
 </html>
